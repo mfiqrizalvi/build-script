@@ -8,7 +8,7 @@ export ZIPNAME=WyrdKernel-${TIME}
 echo "Done..."
 echo "Cloning dependencies"
 git clone https://github.com/mfiqrizalvi/Flashable-Kernol.git --depth 1
-git clone --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b ndk-r21c gcc
+git clone --depth=1 https://github.com/AOSPA/android_gcc_linux-x86_aarch64_aarch64-linux-android-4.9.git gcc
 echo "Done..."
 GCC="$(pwd)/gcc/bin/aarch64-linux-android-"
 IMAGE=$(pwd)/out/arch/arm64/boot/Image.gz-dtb
